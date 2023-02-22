@@ -28,8 +28,8 @@ nav {
     position: fixed;
     z-index: 99;
     background-color: var(--glassmorphism-color);
-    bottom: 3%;
-    left: 50%;
+    bottom: 8%;
+    left: 52%;
     translate: -50% -10%;
     padding: 9px 10px;
     border-radius: 70px;
@@ -326,24 +326,28 @@ nav ul li.active {
     color: rgba(255, 255, 255, 0.755);
 }
 
-.images:hover {
+/* .images:hover {
     left: 50%;
     top: -100px;
     translate: -150%;
-}
+} */
 
 .images:hover img {
     rotate: 0deg;
     margin: 8px;
 }
 
-.images:hover img:nth-child(1) {
+/* .images:hover img:nth-child(1) {
     left: 100%;
 }
 
 .images:hover img:nth-child(3) {
     top: 100%;
     left: 50%;
+} */
+
+section {
+    overflow: hidden;
 }
 
 
@@ -365,7 +369,7 @@ nav ul li.active {
     border: 0.2px solid #2e384b;
 }
 
-.expr-box:hover{
+.expr-box:hover {
     background: transparent;
 }
 
@@ -431,7 +435,7 @@ nav ul li.active {
     transition: var(--active-transition);
 }
 
-.serv-box:hover{
+.serv-box:hover {
     background: transparent;
 }
 
@@ -463,13 +467,15 @@ nav ul li.active {
     transition: var(--active-transition);
 }
 
-.info-box-c:hover, .box-c2 form button:hover {
+.info-box-c:hover,
+.box-c2 form button:hover {
     background: var(--common-color);
 }
 
-.box-c2 form button:hover{
+.box-c2 form button:hover {
     color: white;
 }
+
 .info-box-c>* {
     display: block;
     margin: 4px 0 0 0;
@@ -544,7 +550,7 @@ nav ul li.active {
 
 
 @media (max-width: 600px) {
-    .images:hover img:nth-child(1) {
+    /* .images:hover img:nth-child(1) {
         left: 50%;
     }
 
@@ -556,7 +562,7 @@ nav ul li.active {
     .images:hover img:nth-child(2) {
         top: 200%;
         left: 50%;
-    }
+    } */
 
     .m1 ul {
         list-style: none;
@@ -594,7 +600,7 @@ nav ul li.active {
 }
 
 @media (max-width: 400px) {
-    .images:hover img:nth-child(1) {
+    /* .images:hover img:nth-child(1) {
         left: 100%;
         top: 0;
     }
@@ -613,9 +619,16 @@ nav ul li.active {
     .images:hover img:nth-child(3) {
         top: 0;
         left: 100%;
-    }
+    } */
 
     .box-c2 form {
         width: 100%;
     }
+}
+
+footer {
+    width: 100%;
+    background: #292a63;
+    padding: 20px 0;
+    text-align: center;
 }
